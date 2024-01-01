@@ -1,0 +1,43 @@
+$white: #fff;
+$violet: #7c68cb;
+$grey: #676e74;
+
+$animSpeed: 0.3s;
+
+@mixin img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+@mixin img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@mixin img-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+@mixin abs-top-left-zero {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@mixin prod-card-padding {
+  padding: 0 20px;
+  @media (max-width: 767.98px) {
+    padding-left: calc(18px + (20 - 18) * ((100vw - 320px) / (767.98 - 320)));
+    padding-right: calc(18px + (20 - 18) * ((100vw - 320px) / (767.98 - 320)));
+  }
+}
+@mixin prod-card-margin {
+  margin: 0 20px;
+  @media (max-width: 767.98px) {
+    margin-left: calc(18px + (20 - 18) * ((100vw - 320px) / (767.98 - 320)));
+    margin-right: calc(18px + (20 - 18) * ((100vw - 320px) / (767.98 - 320)));
+  }
+}

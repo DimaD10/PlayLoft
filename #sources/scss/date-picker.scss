@@ -1,0 +1,109 @@
+.ui-datepicker {
+  font-family: Rubik;
+  border-radius: 12px;
+  padding: 16px;
+
+  &-header {
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .ui-icon-circle-triangle-e,
+  .ui-icon-circle-triangle-w {
+    display: none !important;
+  }
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    background-color: transparent;
+    border: none;
+    background: url("../../img/icons/arrow-right-violet.svg") no-repeat 100%;
+    background-size: 12px;
+    background-position: center;
+    cursor: pointer;
+  }
+  .ui-datepicker-prev {
+    transform: rotate(180deg);
+  }
+  .ui-datepicker-calendar {
+    span {
+      font-weight: 600;
+      font-size: 12px;
+      color: #797979 !important;
+    }
+  }
+  th {
+    padding-top: 8px;
+    padding-bottom: 18px;
+  }
+  .ui-state-default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    color: #989898;
+    border-radius: 12px;
+    transition: background-color ease .1s;
+    &:hover {
+      background-color: #c2b3ff4b;
+    }
+  }
+  .ui-datepicker-today a {
+    color: $violet !important;
+    font-weight: 700;
+  }
+  .ui-datepicker-current-day {
+    border-radius: 12px;
+    background-color: #9f90dc;
+    a {
+      color: #fff !important;
+    }
+  }
+}
+.date-picker {
+  position: relative;
+  cursor: pointer;
+
+  input {
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 26px;
+    width: 20px;
+    img {
+      width: 100%;
+    }
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 12px;
+    height: 12px;
+    background: url("../../img/icons/arrow-bottom.svg") no-repeat 100%;
+  }
+}
+.datepicker {
+  min-height: 70px;
+  @media (max-width: 480px) {
+    min-height: 55px;
+  }
+  width: 100%;
+  border-radius: 44px;
+  color: #676e74;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 56px;
+}
