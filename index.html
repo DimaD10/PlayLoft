@@ -96,26 +96,29 @@
             <div class="hero__wrapper">
               <div class="hero__main">
                 <div class="hero__article">
-                  <h1 class="hero__title title" data-aos="fade-up">
+                  <h1 class="hero__title title" data-aos="opacity-anim">
                     сервис бронирования лофтов и студий для мероприятий
                   </h1>
                   <p
                     class="hero__paragraph"
-                    data-aos="fade-up"
-                    data-aos-delay="100">
+                    data-aos="opacity-anim"
+                    data-aos-delay="50">
                     Через наш сайт вы найдёте площадку под любой тип мероприятия
                     быстрее, чем номер в отеле или товар в интернет-магазине.
                   </p>
 
                   <div
                     class="hero__user-options"
-                    data-aos="fade-up"
-                    data-aos-delay="200">
+                    data-aos="opacity-anim"
+                    data-aos-delay="100">
                     <div class="date-picker">
-                        <div class="date-picker__icon">
-                            <img src="./img/icons/calendar-icon.svg" alt="">
-                        </div>
-                    <input type="text" class="datepicker" placeholder="Дата и время" />
+                      <div class="date-picker__icon">
+                        <img src="./img/icons/calendar-icon.svg" alt="" />
+                      </div>
+                      <input
+                        type="text"
+                        class="datepicker"
+                        placeholder="Дата и время" />
                     </div>
                     <div class="hero__target-dropdown dropdown">
                       <select>
@@ -143,24 +146,26 @@
                         </div>
                       </div>
                       <div class="dropdown__body">
-                        <div class="dropdown__block">
-                          <span class="dropdown__block-title">Праздники</span>
-                          <div class="dropdown__block-body">
-                            <div class="dropdown__item">Вечеринка</div>
-                            <div class="dropdown__item">День рождения</div>
-                            <div class="dropdown__item">Свадьба</div>
-                            <div class="dropdown__item">
-                              Детский день рождения
+                        <div class="dropdown__body-wrapper">
+                          <div class="dropdown__block">
+                            <span class="dropdown__block-title">Праздники</span>
+                            <div class="dropdown__block-body">
+                              <div class="dropdown__item">Вечеринка</div>
+                              <div class="dropdown__item">День рождения</div>
+                              <div class="dropdown__item">Свадьба</div>
+                              <div class="dropdown__item">
+                                Детский день рождения
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="dropdown__block">
-                          <span class="dropdown__block-title">Деловое</span>
-                          <div class="dropdown__block-body">
-                            <div class="dropdown__item">Корпоративы</div>
-                            <div class="dropdown__item">Конференция</div>
-                            <div class="dropdown__item">Деловая встреча</div>
-                            <div class="dropdown__item">Презентация</div>
+                          <div class="dropdown__block">
+                            <span class="dropdown__block-title">Деловое</span>
+                            <div class="dropdown__block-body">
+                              <div class="dropdown__item">Корпоративы</div>
+                              <div class="dropdown__item">Конференция</div>
+                              <div class="dropdown__item">Деловая встреча</div>
+                              <div class="dropdown__item">Презентация</div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -170,8 +175,8 @@
                   <a
                     href="#"
                     class="hero__button button-filled"
-                    data-aos="fade-up"
-                    data-aos-delay="300">
+                    data-aos="opacity-anim"
+                    data-aos-delay="150">
                     <span>Подобрать площадку</span>
                     <img src="./img/icons/arrow-right.svg" alt="" />
                   </a>
@@ -182,8 +187,9 @@
                     src="./img/hero-img.png"
                     alt=""
                     data-aos="fade-up"
-                    data-aos-duration="1200"
-                    data-aos-delay="100" />
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                    class="hero__preview-img" />
 
                   <div
                     class="hero-tag hero-tag_first"
@@ -207,7 +213,7 @@
                     class="hero-tag hero-tag_second"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="900">
+                    data-aos-delay="1100">
                     <div class="hero-tag__wrapper">
                       <div class="hero-tag__bg">
                         <img src="./img/bg/hero-tag2.svg" alt="" />
@@ -225,7 +231,7 @@
                     class="hero-tag hero-tag_third"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="1000">
+                    data-aos-delay="1400">
                     <div class="hero-tag__wrapper">
                       <div class="hero-tag__bg">
                         <img src="./img/bg/hero-tag3.svg" alt="" />
@@ -243,7 +249,7 @@
               </div>
               <div
                 class="hero__bottom cards-hero-slider rightDecor"
-                data-aos="zoom-out-up"
+                data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1000">
                 <div class="swiper-wrapper">
@@ -305,521 +311,488 @@
           </div>
         </section>
         <section class="main__recomendations recomendations">
-          <div class="recomendations__container">
-            <div class="recomendations__wrapper prod-list slider-parent">
-              <div class="prod-list__header" data-aos="fade-up">
-                <h2 class="prod-list__title title">Рекомендуем</h2>
+          <div class="recomendations__wrapper prod-list slider-parent">
+            <div class="recomendations__container">
+              <div class="prod-list__header">
+                <h2 class="prod-list__title title" data-aos="cstm-fade-down">
+                  Рекомендуем
+                </h2>
                 <div class="prod-list__slider-nav">
-                  <button class="prod-list__btn prod-list__btn_prev prod-list__btn_prev-0">
+                  <button
+                    class="prod-list__btn prod-list__btn_prev prod-list__btn_prev-0">
                     <img src="./img/icons/arrow-right-violet.svg" alt="" />
                   </button>
-                  <button class="prod-list__btn prod-list__btn_next prod-list__btn_next-0">
+                  <button
+                    class="prod-list__btn prod-list__btn_next prod-list__btn_next-0">
                     <img src="./img/icons/arrow-right-violet.svg" alt="" />
                   </button>
                 </div>
               </div>
-              <div
-                class="prod-list__slider slider-parent"
-                data-aos="fade-up"
-                data-aos-delay="50">
-                <div class="swiper-wrapper">
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                      </div>
-
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+            </div>
+            <div class="prod-list__slider slider-parent">
+              <div class="swiper-wrapper">
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
                     </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                      </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
+
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
                 </div>
               </div>
-              <div class="map" data-aos="fade-up">
-                <div class="map__bg">
+            </div>
+            <div class="recomendations__container">
+              <div class="map" data-aos="cstm-fade-up">
+                <div class="map__bg" data-aos="opacity-anim">
                   <img src="./img/bg/map.png" alt="" />
                 </div>
 
-                <button class="map__button button-filled">
+                <a href="#" class="map__button button-filled">
                   <span>Подобрать площадку</span>
                   <img src="./img/icons/arrow-right.svg" alt="" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -827,8 +800,10 @@
         <section class="main__types types">
           <div class="types__wrapper">
             <div class="types__container">
-              <div class="types__header" data-aos="fade-up">
-                <h2 class="types__title title">Все типы площадок</h2>
+              <div class="types__header">
+                <h2 class="types__title title" data-aos="cstm-fade-down">
+                  Все типы площадок
+                </h2>
 
                 <div class="types__slider-nav">
                   <button class="types__btn types__btn_prev">
@@ -840,7 +815,7 @@
                 </div>
               </div>
             </div>
-            <div class="types__slider" data-aos="fade-up" data-aos-delay="50">
+            <div class="types__slider">
               <div class="swiper-wrapper">
                 <div class="type-card swiper-slide">
                   <div class="type-card__icon">
@@ -889,522 +864,485 @@
           </div>
         </section>
         <section class="main__for-kids for-kids">
-          <div class="for-kids__container">
-            <div class="for-kids__wrapper prod-list">
-              <div class="prod-list__header slider-parent" data-aos="fade-up">
-                <h2 class="prod-list__title title">
+          <div class="for-kids__wrapper prod-list">
+            <div class="for-kids__container">
+              <div class="prod-list__header">
+                <h2 class="prod-list__title title" data-aos="cstm-fade-down">
                   Площадки для детских праздников
                 </h2>
                 <div class="prod-list__slider-nav">
-                  <button class="prod-list__btn prod-list__btn_prev prod-list__btn_prev-1">
+                  <button
+                    class="prod-list__btn prod-list__btn_prev prod-list__btn_prev-0">
                     <img src="./img/icons/arrow-right-violet.svg" alt="" />
                   </button>
-                  <button class="prod-list__btn prod-list__btn_next prod-list__btn_next-1">
+                  <button
+                    class="prod-list__btn prod-list__btn_next prod-list__btn_next-0">
                     <img src="./img/icons/arrow-right-violet.svg" alt="" />
                   </button>
                 </div>
               </div>
-              <div
-                class="prod-list__slider slider-parent"
-                data-aos="fade-up"
-                data-aos-delay="50">
-                <div class="swiper-wrapper">
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                      </div>
-
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+            </div>
+            <div class="prod-list__slider slider-parent">
+              <div class="swiper-wrapper">
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
                     </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                      </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
+
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="main__how-to how-to" data-aos="fade-up">
+        <section class="main__how-to how-to" data-aos="opacity-anim">
           <div class="how-to__container">
             <div class="how-to__wrapper">
               <div class="how-to__article">
-                <h2 class="how-to__title title">
+                <h2 class="how-to__title title" data-aos="cstm-fade-down">
                   Как узнать, свободна ли площадка на нужную мне дату?
                 </h2>
                 <p class="how-to__paragraph">
@@ -1414,10 +1352,13 @@
               </div>
               <div class="how-to__actions-block">
                 <div class="date-picker">
-                    <div class="date-picker__icon">
-                        <img src="./img/icons/calendar-icon.svg" alt="">
-                    </div>
-                  <input type="text" class="datepicker" placeholder="Дата и время" />
+                  <div class="date-picker__icon">
+                    <img src="./img/icons/calendar-icon.svg" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    class="datepicker"
+                    placeholder="Дата и время" />
                 </div>
                 <div class="hero__target-dropdown dropdown">
                   <select>
@@ -1443,22 +1384,26 @@
                     </div>
                   </div>
                   <div class="dropdown__body">
-                    <div class="dropdown__block">
-                      <span class="dropdown__block-title">Праздники</span>
-                      <div class="dropdown__block-body">
-                        <div class="dropdown__item">Вечеринка</div>
-                        <div class="dropdown__item">День рождения</div>
-                        <div class="dropdown__item">Свадьба</div>
-                        <div class="dropdown__item">Детский день рождения</div>
+                    <div class="dropdown__body-wrapper">
+                      <div class="dropdown__block">
+                        <span class="dropdown__block-title">Праздники</span>
+                        <div class="dropdown__block-body">
+                          <div class="dropdown__item">Вечеринка</div>
+                          <div class="dropdown__item">День рождения</div>
+                          <div class="dropdown__item">Свадьба</div>
+                          <div class="dropdown__item">
+                            Детский день рождения
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="dropdown__block">
-                      <span class="dropdown__block-title">Деловое</span>
-                      <div class="dropdown__block-body">
-                        <div class="dropdown__item">Корпоративы</div>
-                        <div class="dropdown__item">Конференция</div>
-                        <div class="dropdown__item">Деловая встреча</div>
-                        <div class="dropdown__item">Презентация</div>
+                      <div class="dropdown__block">
+                        <span class="dropdown__block-title">Деловое</span>
+                        <div class="dropdown__block-body">
+                          <div class="dropdown__item">Корпоративы</div>
+                          <div class="dropdown__item">Конференция</div>
+                          <div class="dropdown__item">Деловая встреча</div>
+                          <div class="dropdown__item">Презентация</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1468,8 +1413,8 @@
                     <img src="./img/icons/phone.svg" alt="" />
                   </div>
                   <input
-                    type="text"
-                    class="input-block__input"
+                    type="tel"
+                    class="input-block__input input-phone-number"
                     placeholder="Ваш телефон" />
                 </div>
                 <button class="how-to__button button-filled">
@@ -1481,522 +1426,489 @@
           </div>
         </section>
         <section class="main__studios studios">
-          <div class="studios__container">
-            <div class="studios__wrapper prod-list">
-              <div class="prod-list__header slider-parent" data-aos="fade-up">
-                <h2 class="prod-list__title title">Фотостудии</h2>
+          <div class="studios__wrapper prod-list">
+            <div class="studios__container">
+              <div class="prod-list__header">
+                <h2 class="prod-list__title title" data-aos="cstm-fade-down">
+                  Площадки для детских праздников
+                </h2>
                 <div class="prod-list__slider-nav">
-                  <button class="prod-list__btn prod-list__btn_prev prod-list__btn_prev-2">
+                  <button
+                    class="prod-list__btn prod-list__btn_prev prod-list__btn_prev-0">
                     <img src="./img/icons/arrow-right-violet.svg" alt="" />
                   </button>
-                  <button class="prod-list__btn prod-list__btn_next prod-list__btn_next-2">
+                  <button
+                    class="prod-list__btn prod-list__btn_next prod-list__btn_next-0">
                     <img src="./img/icons/arrow-right-violet.svg" alt="" />
                   </button>
                 </div>
               </div>
-              <div
-                class="prod-list__slider slider-parent"
-                data-aos="fade-up"
-                data-aos-delay="50">
-                <div class="swiper-wrapper">
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                      </div>
-
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+            </div>
+            <div class="prod-list__slider slider-parent">
+              <div class="swiper-wrapper">
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
                     </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                      </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
-                  <div class="prod-list__slide prod-card swiper-slide">
-                    <div class="prod-card__bg">
-                      <img src="./img/bg/prod-card-bg.svg" alt="" />
-                    </div>
-                    <div class="prod-card__preview prod-preview-slider">
-                      <div class="swiper-wrapper">
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
-                        <a
-                          href="#"
-                          class="prod-card__preview-image swiper-slide">
-                          <img src="./img/prod-img.png" alt="" />
-                        </a>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
                       </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
 
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_prev">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                      <button
-                        class="prod-preview-slider__btn prod-preview-slider__btn_next">
-                        <img src="./img/icons/arrow-right-violet.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_location">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/locate-icon-blue.svg" alt=""
-                      /></span>
-                      <span>Центр</span>
-                    </div>
-                    <div class="prod-card__tag prod-card__tag_rate">
-                      <span class="prod-card__tag-icon"
-                        ><img src="./img/icons/star.svg" alt=""
-                      /></span>
-                      <span>5.0</span>
-                    </div>
-                    <a href="#" class="prod-card__title">
-                      Стильный лофт и крыша на дизайн-заводе Flacon №2316
-                    </a>
-                    <p class="prod-card__descr">
-                      Арт-пространство на дизайн-заводе - светлый лофт для
-                      проведения фотосъемок, видеосъемок, мероприятий
-                    </p>
-                    <div class="prod-card__descr-cards">
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/square.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">1000 м²</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/personal.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">40</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/eat.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                      <div class="prod-descr-card">
-                        <div class="prod-descr-card__icon">
-                          <img src="./img/icons/drink.svg" alt="" />
-                        </div>
-                        <span class="prod-descr-card__title">Да</span>
-                      </div>
-                    </div>
-                    <span class="prod-card__price">
-                      от 2 500 до 4 000 ₽ / час
-                    </span>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
                   </div>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
+                </div>
+                <div class="prod-list__slide prod-card swiper-slide">
+                  <div class="prod-card__bg">
+                    <img src="./img/bg/prod-card-bg.svg" alt="" />
+                  </div>
+                  <div class="prod-card__preview prod-preview-slider">
+                    <div class="swiper-wrapper">
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                      <a href="#" class="prod-card__preview-image swiper-slide">
+                        <img src="./img/prod-img.png" alt="" />
+                      </a>
+                    </div>
+
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_prev">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                    <button
+                      class="prod-preview-slider__btn prod-preview-slider__btn_next">
+                      <img src="./img/icons/arrow-right-violet.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_location">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/locate-icon-blue.svg" alt=""
+                    /></span>
+                    <span>Центр</span>
+                  </div>
+                  <div class="prod-card__tag prod-card__tag_rate">
+                    <span class="prod-card__tag-icon"
+                      ><img src="./img/icons/star.svg" alt=""
+                    /></span>
+                    <span>5.0</span>
+                  </div>
+                  <a href="#" class="prod-card__title">
+                    Стильный лофт и крыша на дизайн-заводе Flacon №2316
+                  </a>
+                  <p class="prod-card__descr">
+                    Арт-пространство на дизайн-заводе - светлый лофт для
+                    проведения фотосъемок, видеосъемок, мероприятий
+                  </p>
+                  <div class="prod-card__descr-cards">
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/square.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">1000 м²</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/personal.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">40</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/eat.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                    <div class="prod-descr-card">
+                      <div class="prod-descr-card__icon">
+                        <img src="./img/icons/drink.svg" alt="" />
+                      </div>
+                      <span class="prod-descr-card__title">Да</span>
+                    </div>
+                  </div>
+                  <span class="prod-card__price">
+                    от 2 500 до 4 000 ₽ / час
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="main__subscribe subscribe" data-aos="fade-up">
+        <section class="main__subscribe subscribe">
           <div class="subscribe__container">
             <div class="subscribe__wrapper">
               <div class="subscribe__article">
-                <h2 class="subscribe__title title">Подключайтесь</h2>
-                <p class="subscribe__paragraph">
+                <h2 class="subscribe__title title" data-aos="cstm-fade-down">
+                  Подключайтесь
+                </h2>
+                <p class="subscribe__paragraph" data-aos="cstm-fade-down">
                   Если вам нужна площадка для мероприятия, у нас большой выбор
                   пространств под любые требования.
                   <br /><br />
@@ -2004,7 +1916,7 @@
                   управления бронированиями и аналитики.
                 </p>
 
-                <div class="subscribe__buttons">
+                <div class="subscribe__buttons" data-aos="cstm-fade-down">
                   <button class="subscribe__button button-filled">
                     <span>Перейти в CRM</span>
                     <img src="./img/icons/arrow-right.svg" alt="" />
@@ -2015,13 +1927,13 @@
                 </div>
               </div>
               <div class="subscribe__cards">
-                <div class="subscribe-card">
+                <div class="subscribe-card" data-aos="opacity-anim">
                   <div class="subscribe-card__icon">
                     <img src="./img/subscribe-icons/img1.png" alt="" />
                   </div>
                   <span class="subscribe-card__title">Оставьте заявку</span>
                 </div>
-                <div class="subscribe-card">
+                <div class="subscribe-card" data-aos="opacity-anim">
                   <div class="subscribe-card__icon">
                     <img src="./img/subscribe-icons/img2.png" alt="" />
                   </div>
@@ -2029,7 +1941,7 @@
                     >Свяжитесь с менеджером</span
                   >
                 </div>
-                <div class="subscribe-card">
+                <div class="subscribe-card" data-aos="opacity-anim">
                   <div class="subscribe-card__icon">
                     <img src="./img/subscribe-icons/img3.png" alt="" />
                   </div>
@@ -2163,31 +2075,39 @@
 
       <div class="popup login">
         <div class="popup__body">
-            <button class="popup__close-btn">
-                <img src="./img/icons/cross-icon.svg" alt="">
+          <button class="popup__close-btn">
+            <img src="./img/icons/cross-icon.svg" alt="" />
+          </button>
+
+          <h3 class="popup__title">Вход</h3>
+          <p class="popup__paragraph">
+            Введите телефон или email для того, чтобы войти
+          </p>
+
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-box__input"
+              required
+              placeholder="E-mail или телефон *" />
+          </div>
+          <div class="input-box password-block">
+            <input
+              type="password"
+              class="input-box__input"
+              required
+              placeholder="Пароль *" />
+            <button class="password-block__btn">
+              <img src="./img/icons/eye.svg" alt="" />
             </button>
+          </div>
 
-            <h3 class="popup__title">Вход</h3>
-            <p class="popup__paragraph">
-                Введите телефон или email для того, чтобы войти
-            </p>
-
-            <div class="input-box">
-                <input type="text" class="input-box__input" required placeholder="E-mail или телефон *">
-            </div>
-            <div class="input-box password-block">
-                <input type="password" class="input-box__input" required placeholder="Пароль *">
-                <button class="password-block__btn">
-                    <img src="./img/icons/eye.svg" alt="">
-                </button>
-            </div>
-
-            <button class="popup__button button-filled">
-                <span>Продолжить</span>
-            </button>
-            <a href="#" class="popup__button popup__button_text">
-                <span>Войти через код</span>
-            </a>
+          <button class="popup__button button-filled">
+            <span>Продолжить</span>
+          </button>
+          <a href="#" class="popup__button popup__button_text">
+            <span>Войти через код</span>
+          </a>
         </div>
       </div>
     </div>
@@ -2199,18 +2119,61 @@
     <script src="./js/actions.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/popup.js"></script>
+    <script src="./js/maska-nomera.js"></script>
+    <script>
+      $(".input-phone-number").mask("+7 (999) 999-99-99");
+
+      $.fn.setCursorPosition = function (pos) {
+        if ($(this).get(0).setSelectionRange) {
+          $(this).get(0).setSelectionRange(pos, pos);
+        } else if ($(this).get(0).createTextRange) {
+          var range = $(this).get(0).createTextRange();
+          range.collapse(true);
+          range.moveEnd("character", pos);
+          range.moveStart("character", pos);
+          range.select();
+        }
+      };
+
+      $('input[type="tel"]').click(function () {
+        $(this).setCursorPosition(4);
+      });
+    </script>
     <script>
       AOS.init({
         duration: 800,
       });
       $(function () {
         $(".datepicker").datepicker({
+          beforeShow: function (input, inst) {
+            setTimeout(function () {
+              inst.dpDiv.outerWidth($("input").outerWidth());
+              inst.dpDiv.css("z-index", 9);
+            }, 0);
+          },
           minDate: 0,
           firstDay: 1,
-            monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-              "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
-            dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
-            dateFormat: "dd.mm.yy",
+          width: 600,
+          monthNames: [
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октябрь",
+            "Ноябрь",
+            "Декабрь",
+          ],
+          dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+          dateFormat: "dd.mm.yy",
+        });
+
+        $(".ui-datepicker").on("click", function () {
+          $(this).outerWidth($(".datepicker").outerWidth());
         });
       });
     </script>

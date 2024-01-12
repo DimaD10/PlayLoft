@@ -2,6 +2,7 @@
   font-family: Rubik;
   border-radius: 12px;
   padding: 16px;
+  font-size: 16px;
 
   &-header {
     background-color: transparent;
@@ -47,7 +48,7 @@
     border: none;
     color: #989898;
     border-radius: 12px;
-    transition: background-color ease .1s;
+    transition: background-color ease 0.1s;
     &:hover {
       background-color: #c2b3ff4b;
     }
@@ -76,6 +77,7 @@
     position: absolute;
     left: 26px;
     width: 20px;
+    pointer-events: none;
     img {
       width: 100%;
     }
@@ -91,6 +93,7 @@
     right: 30px;
     width: 12px;
     height: 12px;
+    pointer-events: none;
     background: url("../img/icons/arrow-bottom.svg") no-repeat 100%;
   }
 }
@@ -106,4 +109,21 @@
   font-size: 18px;
   font-weight: 400;
   padding-left: 56px;
+  &_filter {
+    font-size: 15px;
+    border-radius: 44px;
+    &:not(input) {
+      border: 2px solid #efefef;
+    }
+    .date-picker__icon {
+        img {
+            height: 16px;
+        }
+    }
+
+    min-height: 56px;
+    @media (max-width: 480px) {
+      min-height: 50px;
+    }
+  }
 }
