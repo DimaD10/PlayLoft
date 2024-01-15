@@ -292,15 +292,571 @@
                       </div>
                     </div>
                   </div>
-                  <button class="button-filled">
+                  <button class="button-filled call-filter">
                     <img src="./img/category-icons/all_filtres.svg" alt="" />
                     <span>Все фильтры</span>
                   </button>
 
-                  <div class="modal-filter">Modal Filters</div>
+                  <div class="modal-filter">
+                    <button class="modal-filter__close-btn">
+                        <img src="./img/icons/cross-icon.svg" alt="">
+                    </button>
+
+                    <div class="modal-filter__categories-selects">
+                      <div class="modal-filter__tab modal-filter__tab_current">
+                        <img src="./img/modal_icons/platform.svg" alt="" />
+                        <p>Поиск площадки</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/tags.svg" alt="" />
+                        <p>Объекты</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/subway.svg" alt="" />
+                        <p>Станция метро</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/price.svg" alt="" />
+                        <p>Стоимость за час</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/video.svg" alt="" />
+                        <p>Видеотур</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/equipment.svg" alt="" />
+                        <p>Оборудование</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/rules.svg" alt="" />
+                        <p>Правила</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/interior.svg" alt="" />
+                        <p>Интерьер</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/comfort.svg" alt="" />
+                        <p>Удобства</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/entertainment.svg" alt="" />
+                        <p>Развлечения</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/furniture.svg" alt="" />
+                        <p>Мебель</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/location.svg" alt="" />
+                        <p>Локация и территория</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/peculiarities.svg" alt="" />
+                        <p>Особенности</p>
+                      </div>
+                      <div class="modal-filter__tab">
+                        <img src="./img/modal_icons/parking.svg" alt="" />
+                        <p>Парковка</p>
+                      </div>
+                    </div>
+                    <div class="modal-filter__categories-sections">
+                      <div class="modal-filter__body">
+                        <button class="modal-filter__close-content-btn">
+                            <img src="./img/icons/cross-icon.svg" alt="">
+                        </button>
+                        <div
+                          class="modal-filter__category-content modal-filter__category-content_current">
+                          <input type="text" placeholder="Поиск" />
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="1"
+                                name="name1" />
+                              <label for="1" class="checkbox__label"
+                                >Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="2"
+                                name="name1" />
+                              <label for="2" class="checkbox__label"
+                                >Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="3"
+                                name="name1" />
+                              <label for="3" class="checkbox__label"
+                                >Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="4"
+                                name="name2" />
+                              <label for="4" class="checkbox__label"
+                                ><span
+                                  class="color"
+                                  style="background: rgb(255, 255, 0)"></span>
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="5"
+                                name="name2" />
+                              <label for="5" class="checkbox__label"
+                                ><span
+                                  class="color"
+                                  style="background: rgb(249, 188, 209)"></span>
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="6"
+                                name="name2" />
+                              <label for="6" class="checkbox__label"
+                                ><span
+                                  class="color"
+                                  style="background: rgb(2, 154, 85)"></span>
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <div class="price-range-inputs">
+                            <div
+                              class="price-range-inputs__input price-range-inputs__input_equel">
+                              <input type="number" placeholder="100" />
+                            </div>
+                            <div
+                              class="price-range-inputs__input price-range-inputs__input_more">
+                              <input type="number" placeholder="100" />
+                            </div>
+                            <div
+                              class="price-range-inputs__input price-range-inputs__input_less">
+                              <input type="number" placeholder="100" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <div class="checkbox-parent y-or-n">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input y-or-n__each"
+                                id="7"
+                                name="name3" />
+                              <label for="7" class="checkbox__label"
+                                >Все</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input y-or-n__y"
+                                id="8"
+                                name="name3" />
+                              <label for="8" class="checkbox__label"
+                                >Да</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input y-or-n__n"
+                                id="9"
+                                name="name3" />
+                              <label for="9" class="checkbox__label"
+                                >Нет</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="10"
+                                name="name4" />
+                              <label for="10" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="11"
+                                name="name4" />
+                              <label for="11" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="12"
+                                name="name4" />
+                              <label for="12" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="13"
+                                name="name5" />
+                              <label for="13" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="14"
+                                name="name5" />
+                              <label for="14" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="15"
+                                name="name5" />
+                              <label for="15" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="16"
+                                name="name6" />
+                              <label for="16" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="17"
+                                name="name6" />
+                              <label for="17" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="18"
+                                name="name6" />
+                              <label for="18" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="19"
+                                name="name7" />
+                              <label for="19" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="20"
+                                name="name7" />
+                              <label for="20" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="21"
+                                name="name7" />
+                              <label for="21" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="22"
+                                name="name8" />
+                              <label for="22" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="23"
+                                name="name8" />
+                              <label for="23" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="24"
+                                name="name8" />
+                              <label for="24" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="25"
+                                name="name9" />
+                              <label for="25" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="26"
+                                name="name9" />
+                              <label for="26" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="27"
+                                name="name9" />
+                              <label for="27" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="28"
+                                name="name10" />
+                              <label for="28" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="29"
+                                name="name10" />
+                              <label for="29" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="30"
+                                name="name10" />
+                              <label for="30" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="31"
+                                name="name11" />
+                              <label for="31" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="32"
+                                name="name11" />
+                              <label for="32" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="33"
+                                name="name11" />
+                              <label for="33" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-filter__category-content">
+                          <input type="text" placeholder="Поиск" />
+
+                          <div class="checkbox-parent">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="34"
+                                name="name12" />
+                              <label for="34" class="checkbox__label"
+                                >
+                                Опция 1</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="35"
+                                name="name12" />
+                              <label for="35" class="checkbox__label"
+                                >
+                                Опция 2</label
+                              >
+                            </div>
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                class="checkbox__input"
+                                id="36"
+                                name="name12" />
+                              <label for="36" class="checkbox__label"
+                                >
+                                Опция 3</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div href="#">
+              <div>
                 <div class="map map_category">
                   <div class="map__bg">
                     <img src="./img/bg/map.png" alt="" />
@@ -1134,6 +1690,7 @@
     <script src="./js/actions.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/popup.js"></script>
+    <script src="./js/tabs.js"></script>
     <script>
       AOS.init({
         duration: 800,

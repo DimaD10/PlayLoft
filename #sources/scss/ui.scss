@@ -46,7 +46,7 @@ body {
 
 button,
 a,
-.dropdown__header {
+.dropdown__header, .modal-filter__tab, .checkbox {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -83,9 +83,17 @@ a,
     left: 0%;
   }
   &[data-modal-selector] {
-    span, img {
-        pointer-events: none;
+    span,
+    img {
+      pointer-events: none;
     }
+  }
+}
+
+input[type="number"] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
   }
 }
 
@@ -530,7 +538,7 @@ a,
     margin-top: 22px;
   }
 }
-.photos{
+.photos {
   &__btn {
     width: 42px;
     height: 42px;

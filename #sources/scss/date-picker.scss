@@ -115,6 +115,9 @@
     &:not(input) {
       border: 2px solid #efefef;
     }
+    &::after {
+        right: 20px;
+    }
     .date-picker__icon {
         img {
             height: 16px;
