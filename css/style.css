@@ -3737,12 +3737,12 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   background-position: center;
 }
 .price-range-inputs__input_more::after {
-  background: url("../../img/icons/greater-or-equal.svg") no-repeat 100%;
+  background: url("../img/icons/greater-or-equal.svg") no-repeat 100%;
   background-size: contain;
   background-position: center;
 }
 .price-range-inputs__input_less::after {
-  background: url("../../img/icons/less-or-equal.svg") no-repeat 100%;
+  background: url("../img/icons/less-or-equal.svg") no-repeat 100%;
   background-size: contain;
   background-position: center;
 }
