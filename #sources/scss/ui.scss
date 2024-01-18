@@ -265,8 +265,9 @@ input[type="number"] {
   }
 
   &.active {
-    z-index: 999;
+    z-index: 9999;
     .dropdown__body {
+        z-index: 99;
       opacity: 1;
       transform: translateY(0px);
       pointer-events: all;
@@ -437,39 +438,6 @@ input[type="number"] {
     margin: 0 auto;
 
     @media (max-width: 1360px) {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -2px;
-        height: 100%;
-        width: 120px;
-        pointer-events: none;
-        z-index: 10;
-        filter: blur(2px);
-        background: linear-gradient(
-          270deg,
-          #fff 0%,
-          rgba(255, 255, 255, 0.09) 56.9%,
-          rgba(255, 255, 255, 0) 100%
-        );
-        @media (max-width: 480px) {
-          width: 80px;
-          right: 0;
-        }
-        @media (max-width: 360px) {
-          width: 40px;
-        }
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-      &.rightDecor {
-        &::after {
-          opacity: 1;
-        }
-      }
-
       .prod-card {
         @media (max-width: 1360px) {
           max-width: 29vw;
