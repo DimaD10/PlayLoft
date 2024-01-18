@@ -813,15 +813,17 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
           justify-content: center;
   -webkit-transition: background-color ease 0.3s, opacity ease 0.3s;
   transition: background-color ease 0.3s, opacity ease 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 @media (min-width: 1024px) {
   .prod-preview-slider__btn {
     opacity: 0;
   }
 }
-@media (max-width: 1023.98px) {
+@media only screen and (max-width: 1023.98px) {
   .prod-preview-slider__btn {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 .prod-preview-slider__btn:hover {
@@ -1632,6 +1634,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   .header-nav__link {
     font-size: 20px;
     padding: 8px 0;
+    text-align: center;
   }
 }
 .header-nav__link::after {
@@ -2473,6 +2476,8 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 
 .how-to {
+  position: relative;
+  z-index: 9;
   margin-top: 65px;
 }
 @media (max-width: 991.98px) {
