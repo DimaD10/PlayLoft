@@ -45,51 +45,31 @@ heroCards.snapGrid[heroCards.snapGrid.length - 1] =
 
 const prodSliders = document.querySelectorAll(".prod-list__slider");
 
-prodSliders.forEach((slider) => {
-  const swiperInstance = new Swiper(slider, {
+prodSliders.forEach((slider, index) => {
+  new Swiper(slider, {
     spaceBetween: 20,
     slidesPerView: 4,
 
     navigation: {
-      nextEl: `.prod-list__btn_next-${prodIndex}`,
-      prevEl: `.prod-list__btn_prev-${prodIndex}`,
+      nextEl: `.prod-list__btn_next-${index}`,
+      prevEl: `.prod-list__btn_prev-${index}`,
     },
 
     breakpoints: {
       320: {
-        slidesPerView: "auto",
+        slidesPerView: 1,
+      },
+      667.98: {
+        slidesPerView: 2,
+      },
+      991.98: {
+        slidesPerView: 3,
       },
       1360: {
         slidesPerView: 4,
       },
     },
-    on: {
-      init: function (el) {
-        el.snapGrid[el.snapGrid.length - 1] =
-          el.slidesGrid[el.slidesGrid.length - 1];
-      },
-      resize: function () {
-        if (!this.isEnd) {
-          this.el.classList.add("rightDecor");
-        }
-      },
-      sliderMove: function () {
-        if (!this.isEnd) {
-          this.el.classList.add("rightDecor");
-        }
-      },
-      slideChange: function () {
-        if (!this.isEnd) {
-          this.el.classList.add("rightDecor");
-        }
-      },
-      reachEnd: function () {
-        this.el.classList.remove("rightDecor");
-      },
-    },
   });
-
-  prodIndex + 1;
 });
 
 const prodCard = new Swiper(".prod-preview-slider", {
