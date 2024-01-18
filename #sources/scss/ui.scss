@@ -46,7 +46,9 @@ body {
 
 button,
 a,
-.dropdown__header, .modal-filter__tab, .checkbox {
+.dropdown__header,
+.modal-filter__tab,
+.checkbox {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -267,7 +269,7 @@ input[type="number"] {
   &.active {
     z-index: 9999;
     .dropdown__body {
-        z-index: 99;
+      z-index: 99;
       opacity: 1;
       transform: translateY(0px);
       pointer-events: all;
@@ -543,7 +545,7 @@ input[type="number"] {
     top: 50%;
     transform: translateY(-50%);
     background-color: #fff;
-    z-index: 99;
+    z-index: 9999;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -554,6 +556,9 @@ input[type="number"] {
 
     @media (min-width: 1024px) {
       opacity: 0;
+    }
+    @media (max-width: 1023.98px) {
+      opacity: 1;
     }
 
     &:hover {

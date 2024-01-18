@@ -228,7 +228,9 @@ body::-webkit-scrollbar-thumb {
 
 button,
 a,
-.dropdown__header, .modal-filter__tab, .checkbox {
+.dropdown__header,
+.modal-filter__tab,
+.checkbox {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -796,7 +798,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #fff;
-  z-index: 99;
+  z-index: 9999;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -815,6 +817,11 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 @media (min-width: 1024px) {
   .prod-preview-slider__btn {
     opacity: 0;
+  }
+}
+@media (max-width: 1023.98px) {
+  .prod-preview-slider__btn {
+    opacity: 1;
   }
 }
 .prod-preview-slider__btn:hover {

@@ -46,7 +46,7 @@ heroCards.snapGrid[heroCards.snapGrid.length - 1] =
 const prodSliders = document.querySelectorAll(".prod-list__slider");
 
 prodSliders.forEach((slider, index) => {
-  new Swiper(slider, {
+  const swiperInstance = new Swiper(slider, {
     spaceBetween: 20,
     slidesPerView: 4,
 
@@ -57,16 +57,16 @@ prodSliders.forEach((slider, index) => {
 
     breakpoints: {
       320: {
-        slidesPerView: 1,
-      },
-      667.98: {
-        slidesPerView: 2,
-      },
-      991.98: {
-        slidesPerView: 3,
+        slidesPerView: "auto",
       },
       1360: {
         slidesPerView: 4,
+      },
+    },
+    on: {
+      init: function (el) {
+        el.snapGrid[el.snapGrid.length - 1] =
+          el.slidesGrid[el.slidesGrid.length - 1];
       },
     },
   });
