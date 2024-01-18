@@ -1700,7 +1700,7 @@
           beforeShow: function (input, inst) {
             setTimeout(function () {
               inst.dpDiv.outerWidth($("input").outerWidth());
-              inst.dpDiv.css("z-index", 10);
+              inst.dpDiv.css("z-index", 99);
             }, 0);
           },
           minDate: 0,
@@ -1723,9 +1723,15 @@
           dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
           dateFormat: "dd.mm.yy",
         });
-
         $(".ui-datepicker").on("click", function () {
-          $(this).outerWidth($(".datepicker").outerWidth());
+          $(this).outerWidth($("input").outerWidth());
+        });
+        $(".datepicker").mousedown(function () {
+          if ($(".ui-datepicker").is(":visible")) {
+            $(this).datepicker("hide");
+          } else {
+            $(this).datepicker("show");
+          }
         });
       });
     </script>
