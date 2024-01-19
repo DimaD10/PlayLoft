@@ -543,7 +543,6 @@ input[type="number"] {
   &__btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background-color: #fff;
     z-index: 9999;
     width: 32px;
@@ -555,7 +554,7 @@ input[type="number"] {
     transition: background-color ease $animSpeed, opacity ease $animSpeed;
 
     -webkit-transform: translate3d(0, 0, 0); 
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) translateY(-50%);
 
     @media (min-width: 1024px) {
       opacity: 0;

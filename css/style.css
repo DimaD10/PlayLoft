@@ -795,8 +795,6 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .prod-preview-slider__btn {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   background-color: #fff;
   z-index: 9999;
   width: 32px;
@@ -814,7 +812,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   -webkit-transition: background-color ease 0.3s, opacity ease 0.3s;
   transition: background-color ease 0.3s, opacity ease 0.3s;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0) translateY(-50%);
 }
 @media (min-width: 1024px) {
   .prod-preview-slider__btn {
