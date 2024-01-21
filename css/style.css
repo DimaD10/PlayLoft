@@ -1307,6 +1307,30 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
           transform: translateY(-50%) rotate(45deg);
 }
 
+input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::placeholder {
+  opacity: 1;
+}
+
+address {
+  font-style: normal;
+}
+
 .ui-datepicker {
   font-family: Rubik;
   border-radius: 12px;
@@ -1434,9 +1458,16 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .datepicker_filter:not(input) {
   border: 2px solid #efefef;
+  padding-left: 46px;
+}
+.datepicker_filter input {
+  padding-left: 0;
 }
 .datepicker_filter::after {
   right: 20px;
+}
+.datepicker_filter .date-picker__icon {
+  left: 20px;
 }
 .datepicker_filter .date-picker__icon img {
   height: 16px;
@@ -1448,7 +1479,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 
 .home-page {
-  background: url("../img/bg/home-bg.png") no-repeat 100%;
+  background: url("../img/bg/home-bg.webp") no-repeat 100%;
   background-position: top center;
   background-size: 1920px;
 }
@@ -1473,7 +1504,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -2684,6 +2715,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .how-to__button img {
   width: 15px;
 }
+.how-to .dropdown.choosen .dropdown__placeholder {
+  display: none;
+}
 
 .for-kids {
   position: relative;
@@ -2695,7 +2729,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url("../img/bg/home-bg-second.png") no-repeat 100%;
+  background: url("../img/bg/home-bg-second.webp") no-repeat 100%;
   background-size: 140vw;
   background-position: top center;
   z-index: -1;
@@ -3231,6 +3265,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   color: #676e74;
   margin-bottom: 22px;
   gap: 15px;
+  z-index: 8;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -3364,7 +3399,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   right: 0;
   max-width: 650px;
   width: calc(100vw - 20px);
-  z-index: 999;
+  z-index: 99999999;
   height: 510px;
   background-color: white;
   border-radius: 20px;
@@ -4068,6 +4103,34 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .card-view__contact-info {
   max-width: 553px;
 }
+@media (max-width: 480px) {
+  .card-view__contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .card-view__contact-info .card-view__contact-title {
+    font-size: 24px;
+  }
+  .card-view__contact-info .card-view__contact-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .card-view__contact-title {
   font-size: 44px;
   font-weight: 700;
@@ -4226,6 +4289,9 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   overflow: hidden;
+  background: url("../img/bg/map.png") no-repeat 100%;
+  background-size: cover;
+  background-position: center;
 }
 .card-info__location::before {
   content: "";
@@ -4312,6 +4378,13 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   color: #676e74;
   font-size: 42px;
   font-weight: 700;
+}
+@media (max-width: 480px) {
+  .card-info__progress-items li .card-info__progress-title {
+    margin-right: auto;
+    padding-right: 12px;
+    max-width: 140px;
+  }
 }
 .card-info__progress-item {
   display: -webkit-box;

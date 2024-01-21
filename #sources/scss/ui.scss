@@ -1009,3 +1009,11 @@ input[type="number"] {
     }
   }
 }
+
+input::placeholder {
+    opacity: 1;
+}
+
+address {
+    font-style: normal;
+}

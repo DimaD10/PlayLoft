@@ -1,5 +1,6 @@
 const popups = document.querySelectorAll(".popup");
 const modalFilter = document.querySelector(".modal-filter");
+const header = document.querySelector(".header");
 
 document.addEventListener("click", (e) => {
   if (
@@ -8,6 +9,10 @@ document.addEventListener("click", (e) => {
   ) {
     document.querySelector(".login").classList.add("open");
     document.body.style.overflow = "hidden";
+    if (menuBurger.classList.contains("active")) {
+         menuBurger.classList.remove("active");
+         document.querySelector(".burger-btn").classList.remove('active');
+    }
   }
   if (
     modalFilter &&
@@ -22,15 +27,21 @@ document.addEventListener("click", (e) => {
       modalFilter.classList.add("active");
       if (window.innerWidth < 767.98) {
         document.body.style.overflow = "hidden";
+        header.style.zIndex = "-1";
       }
     } else {
       modalFilter.classList.remove("active");
       document.body.style.overflow = "";
+
+      if (window.innerWidth < 767.98) {
+        header.style.zIndex = "9";
+      }
     }
   }
   if (e.target.closest(".modal-filter__close-btn")) {
     modalFilter.classList.remove("active");
     document.body.style.overflow = "";
+    header.style.zIndex = "9";
   }
   if (e.target.closest(".modal-filter__close-content-btn")) {
     modalFilter
@@ -69,7 +80,7 @@ document.addEventListener("keydown", function (event) {
       });
     }
     if (modalFilter) {
-        modalFilter.classList.remove('active');
+      modalFilter.classList.remove("active");
     }
 
     document.body.style.overflow = "";

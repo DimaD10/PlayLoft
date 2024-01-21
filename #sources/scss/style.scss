@@ -5,7 +5,7 @@
 @import "date-picker.scss";
 
 .home-page {
-  background: url("../img/bg/home-bg.png") no-repeat 100%;
+  background: url("../img/bg/home-bg.webp") no-repeat 100%;
   background-position: top center;
   background-size: 1920px;
   @media (min-width: 1920px) {
@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9;
 
   // .header__wrapper
 
@@ -984,6 +984,10 @@
       width: 15px;
     }
   }
+
+  .dropdown.choosen .dropdown__placeholder {
+    display: none;
+  }
 }
 .for-kids {
   position: relative;
@@ -994,7 +998,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url("../img/bg/home-bg-second.png") no-repeat 100%;
+    background: url("../img/bg/home-bg-second.webp") no-repeat 100%;
     background-size: 140vw;
     background-position: top center;
     z-index: -1;
@@ -1421,6 +1425,7 @@
     color: #676e74;
     margin-bottom: 22px;
     gap: 15px;
+    z-index: 8;
     @media (max-width: 1600px) {
       gap: calc(8px + (15 - 8) * ((100vw - 1300px) / (1600 - 1300)));
     }
@@ -1663,7 +1668,7 @@
   right: 0;
   max-width: 650px;
   width: calc(100vw - 20px);
-  z-index: 999;
+  z-index: 99999999;
   height: 510px;
   background-color: white;
   border-radius: 20px;
@@ -2077,6 +2082,22 @@
   }
   &__contact-info {
     max-width: 553px;
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .card-view__contact-title {
+            font-size: 24px;
+        }
+        .card-view__contact-text {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
   }
   &__contact-title {
     font-size: 44px;
@@ -2212,6 +2233,9 @@
     background: rgba(231, 231, 231, 0.15);
     backdrop-filter: blur(6px);
     overflow: hidden;
+    background: url('../img/bg/map.png') no-repeat 100%;
+    background-size: cover;
+    background-position: center;
 
     &::before {
       content: "";
@@ -2288,6 +2312,13 @@
     color: $grey;
     font-size: 42px;
     font-weight: 700;
+  }
+  &__progress-items li .card-info__progress-title {
+    @media (max-width: 480px) {
+        margin-right: auto;
+        padding-right: 12px;
+        max-width: 140px;
+    }
   }
   &__progress-item {
     display: flex;
