@@ -1010,9 +1010,10 @@ input[type="number"] {
   }
 }
 
-input::placeholder {
+input::placeholder, input::-webkit-input-placeholder {
     opacity: 1;
     color: #676e74 !important;
+    -webkit-appearance: none;
 }
 
 address {

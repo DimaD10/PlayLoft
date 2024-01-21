@@ -1310,26 +1310,13 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 input::-webkit-input-placeholder {
   opacity: 1;
   color: #676e74 !important;
+  -webkit-appearance: none;
 }
 
-input::-moz-placeholder {
+input::placeholder, input::-webkit-input-placeholder {
   opacity: 1;
   color: #676e74 !important;
-}
-
-input:-ms-input-placeholder {
-  opacity: 1;
-  color: #676e74 !important;
-}
-
-input::-ms-input-placeholder {
-  opacity: 1;
-  color: #676e74 !important;
-}
-
-input::placeholder {
-  opacity: 1;
-  color: #676e74 !important;
+  -webkit-appearance: none;
 }
 
 address {
