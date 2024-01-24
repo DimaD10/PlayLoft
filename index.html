@@ -328,7 +328,10 @@
                 </div>
               </div>
             </div>
-            <div class="prod-list__slider slider-parent" data-aos="cstm-fade-up" data-aos-delay="100">
+            <div
+              class="prod-list__slider slider-parent"
+              data-aos="cstm-fade-up"
+              data-aos-delay="100">
               <div class="swiper-wrapper">
                 <div class="prod-list__slide prod-card swiper-slide">
                   <div class="prod-card__bg">
@@ -814,7 +817,10 @@
                 </div>
               </div>
             </div>
-            <div class="types__slider" data-aos="cstm-fade-up" data-aos-delay="100">
+            <div
+              class="types__slider"
+              data-aos="cstm-fade-up"
+              data-aos-delay="100">
               <div class="swiper-wrapper">
                 <div class="type-card swiper-slide">
                   <div class="type-card__icon">
@@ -869,7 +875,7 @@
                 <h2 class="prod-list__title title" data-aos="cstm-fade-up">
                   Площадки для детских праздников
                 </h2>
-                <div class="prod-list__slider-nav"  data-aos="cstm-fade-up">
+                <div class="prod-list__slider-nav" data-aos="cstm-fade-up">
                   <button
                     class="prod-list__btn prod-list__btn_prev prod-list__btn_prev-1">
                     <img src="./img/icons/arrow-right-violet.svg" alt="" />
@@ -881,7 +887,10 @@
                 </div>
               </div>
             </div>
-            <div class="prod-list__slider slider-parent" data-aos="cstm-fade-up" data-aos-delay="100">
+            <div
+              class="prod-list__slider slider-parent"
+              data-aos="cstm-fade-up"
+              data-aos-delay="100">
               <div class="swiper-wrapper">
                 <div class="prod-list__slide prod-card swiper-slide">
                   <div class="prod-card__bg">
@@ -1443,7 +1452,10 @@
                 </div>
               </div>
             </div>
-            <div class="prod-list__slider slider-parent" data-aos="cstm-fade-up" data-aos-delay="100">
+            <div
+              class="prod-list__slider slider-parent"
+              data-aos="cstm-fade-up"
+              data-aos-delay="100">
               <div class="swiper-wrapper">
                 <div class="prod-list__slide prod-card swiper-slide">
                   <div class="prod-card__bg">
@@ -1907,7 +1919,10 @@
                 <h2 class="subscribe__title title" data-aos="cstm-fade-up">
                   Подключайтесь
                 </h2>
-                <p class="subscribe__paragraph" data-aos="cstm-fade-up" data-aos-delay="50">
+                <p
+                  class="subscribe__paragraph"
+                  data-aos="cstm-fade-up"
+                  data-aos-delay="50">
                   Если вам нужна площадка для мероприятия, у нас большой выбор
                   пространств под любые требования.
                   <br /><br />
@@ -1915,7 +1930,10 @@
                   управления бронированиями и аналитики.
                 </p>
 
-                <div class="subscribe__buttons" data-aos="cstm-fade-up" data-aos-delay="100">
+                <div
+                  class="subscribe__buttons"
+                  data-aos="cstm-fade-up"
+                  data-aos-delay="100">
                   <button class="subscribe__button button-filled">
                     <span>Перейти в CRM</span>
                     <img src="./img/icons/arrow-right.svg" alt="" />
@@ -2146,7 +2164,6 @@
         $(".datepicker").datepicker({
           beforeShow: function (input, inst) {
             setTimeout(function () {
-              inst.dpDiv.outerWidth($("input").outerWidth());
               inst.dpDiv.css("z-index", 99);
             }, 0);
           },
@@ -2170,15 +2187,17 @@
           dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
           dateFormat: "dd.mm.yy",
         });
-        $(".ui-datepicker").on("click", function () {
-          $(this).outerWidth($("input").outerWidth());
-        });
         $(".datepicker").mousedown(function () {
           if ($(".ui-datepicker").is(":visible")) {
+            $(".ui-datepicker").outerWidth($(this).outerWidth());
             $(this).datepicker("hide");
           } else {
+            $(".ui-datepicker").outerWidth($(this).outerWidth());
             $(this).datepicker("show");
           }
+        });
+        $(".datepicker").on("click", function () {
+          $(".ui-datepicker").outerWidth($(this).outerWidth());
         });
       });
     </script>

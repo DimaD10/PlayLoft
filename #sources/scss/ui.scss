@@ -714,6 +714,9 @@ input[type="number"] {
     font-family: Rubik;
     font-size: 20px;
     font-weight: 700;
+    @media (max-width: 1200px) {
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1200 - 320)));
+    }
   }
 }
 

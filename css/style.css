@@ -1001,6 +1001,11 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
     padding-right: calc(18px + 2 * (100vw - 320px) / 447.98);
   }
 }
+@media (max-width: 1200px) {
+  .prod-card__price {
+    font-size: calc(16px + 4 * (100vw - 320px) / 880);
+  }
+}
 
 .prod-descr-card {
   display: -webkit-box;
@@ -2261,7 +2266,7 @@ address {
 }
 @media (max-width: 480px) {
   .hero-tag_first {
-    width: 120px;
+    width: 130px;
     left: -2vw;
   }
 }
@@ -2282,8 +2287,9 @@ address {
 }
 @media (max-width: 480px) {
   .hero-tag_second {
-    right: -2vw;
+    right: 0;
     top: 6%;
+    width: 150px;
   }
 }
 @media (max-width: 360px) {
@@ -2735,11 +2741,6 @@ address {
   .for-kids::after {
     height: 150vh;
     background-size: 220vw;
-  }
-}
-@media (max-width: 991.98px) {
-  .for-kids__wrapper {
-    padding-top: 0;
   }
 }
 

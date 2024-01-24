@@ -632,7 +632,7 @@
       left: 3vw;
     }
     @media (max-width: 480px) {
-      width: 120px;
+      width: 130px;
       left: -2vw;
     }
   }
@@ -647,8 +647,9 @@
       right: 3vw;
     }
     @media (max-width: 480px) {
-      right: -2vw;
+      right: 0;
       top: 6%;
+      width: 150px;
     }
     @media (max-width: 360px) {
       width: 130px;
@@ -1008,12 +1009,6 @@
     @media (max-width: 1200px) {
       height: 150vh;
       background-size: 220vw;
-    }
-  }
-
-  &__wrapper {
-    @media (max-width: 991.98px) {
-      padding-top: 0;
     }
   }
 }
