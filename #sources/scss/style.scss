@@ -147,11 +147,11 @@
     &::after {
       content: "";
       position: absolute;
-      width: 0%;
+      width: 100%;
       height: 1px;
       background-color: $violet;
-      left: 50%;
-      transform: translateX(-50%) translateY(4px);
+      left: 0;
+      transform: translateY(4px);
       bottom: 0;
       opacity: 0;
       transition: transform ease $animSpeed, opacity ease $animSpeed,
@@ -165,7 +165,7 @@
         opacity: 1;
         bottom: 0px;
         width: 100%;
-        transform: translateX(-50%) translateY(0px);
+        transform: translateY(0px);
       }
     }
 
@@ -766,6 +766,7 @@
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+
     @media (max-width: 1460px) {
       padding: 30px 10px;
     }
@@ -1547,12 +1548,13 @@
       display: flex;
       align-items: flex-end;
       transition: opacity ease $animSpeed;
-      opacity: 1;
       z-index: 15;
+      opacity: 0;
+      pointer-events: none;
 
       &.closed {
-        opacity: 0;
-        pointer-events: none;
+        opacity: 1;
+        pointer-events: all;
       }
     }
     input[type="text"],
@@ -2079,19 +2081,19 @@
     max-width: 553px;
 
     @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
 
-        .card-view__contact-title {
-            font-size: 24px;
-        }
-        .card-view__contact-text {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+      .card-view__contact-title {
+        font-size: 24px;
+      }
+      .card-view__contact-text {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
   }
   &__contact-title {
@@ -2228,7 +2230,7 @@
     background: rgba(231, 231, 231, 0.15);
     backdrop-filter: blur(6px);
     overflow: hidden;
-    background: url('../img/bg/map.png') no-repeat 100%;
+    background: url("../img/bg/map.png") no-repeat 100%;
     background-size: cover;
     background-position: center;
 
@@ -2310,9 +2312,9 @@
   }
   &__progress-items li .card-info__progress-title {
     @media (max-width: 480px) {
-        margin-right: auto;
-        padding-right: 12px;
-        max-width: 140px;
+      margin-right: auto;
+      padding-right: 12px;
+      max-width: 140px;
     }
   }
   &__progress-item {

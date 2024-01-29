@@ -114,16 +114,16 @@
     border-radius: 44px;
     &:not(input) {
       border: 2px solid #efefef;
-      padding-left: 46px;
+      
     }
     input {
-        padding-left: 0;
+      padding-left: 46px;
     }
     &::after {
       right: 20px;
     }
     .date-picker__icon {
-        left: 20px;
+      left: 20px;
       img {
         height: 16px;
       }

@@ -24,10 +24,10 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -339,6 +339,7 @@
                     <input
                       type="text"
                       class="card-view__contact-field datepicker"
+                      readonly
                       placeholder="Дата и время" />
                   </div>
                   <div class="hero__target-dropdown dropdown">
@@ -494,10 +495,7 @@
                 <h5 class="card-info__title" data-aos="cstm-fade-up">
                   Локация
                 </h5>
-                <a
-                  class="card-info__location"
-                  href="#"
-                  data-aos="cstm-fade-up">
+                <a class="card-info__location" href="#" data-aos="cstm-fade-up">
                   <img
                     class="card-info__location-icon"
                     src="img/icons/locate-icon-blue.svg"
@@ -974,6 +972,18 @@
                 <span class="prod-card__price">
                   от 2 500 до 4 000 ₽ / час
                 </span>
+                <a href="#" class="prod-card__box">
+                  <span class="prod-card__box-link">
+                    <img
+                      class="prod-card__box-icon"
+                      src="./img/icons/play.svg"
+                      alt="play icon" />
+                  </span>
+                  <span class="prod-card__box-btn button-filled">
+                    <span>Подробнее</span>
+                    <img src="./img/icons/arrow-right.svg" alt="" />
+                  </span>
+                </a>
               </div>
               <div
                 class="prod-list__slide prod-card swiper-slide swiper-slide-next">
@@ -1059,6 +1069,18 @@
                 <span class="prod-card__price">
                   от 2 500 до 4 000 ₽ / час
                 </span>
+                <a href="#" class="prod-card__box">
+                  <span class="prod-card__box-link">
+                    <img
+                      class="prod-card__box-icon"
+                      src="./img/icons/play.svg"
+                      alt="play icon" />
+                  </span>
+                  <span class="prod-card__box-btn button-filled">
+                    <span>Подробнее</span>
+                    <img src="./img/icons/arrow-right.svg" alt="" />
+                  </span>
+                </a>
               </div>
               <div class="prod-list__slide prod-card swiper-slide">
                 <div class="prod-card__bg">
@@ -1143,6 +1165,18 @@
                 <span class="prod-card__price">
                   от 2 500 до 4 000 ₽ / час
                 </span>
+                <a href="#" class="prod-card__box">
+                  <span class="prod-card__box-link">
+                    <img
+                      class="prod-card__box-icon"
+                      src="./img/icons/play.svg"
+                      alt="play icon" />
+                  </span>
+                  <span class="prod-card__box-btn button-filled">
+                    <span>Подробнее</span>
+                    <img src="./img/icons/arrow-right.svg" alt="" />
+                  </span>
+                </a>
               </div>
               <div class="prod-list__slide prod-card swiper-slide">
                 <div class="prod-card__bg">
@@ -1223,6 +1257,18 @@
                 <span class="prod-card__price">
                   от 2 500 до 4 000 ₽ / час
                 </span>
+                <a href="#" class="prod-card__box">
+                  <span class="prod-card__box-link">
+                    <img
+                      class="prod-card__box-icon"
+                      src="./img/icons/play.svg"
+                      alt="play icon" />
+                  </span>
+                  <span class="prod-card__box-btn button-filled">
+                    <span>Подробнее</span>
+                    <img src="./img/icons/arrow-right.svg" alt="" />
+                  </span>
+                </a>
               </div>
               <div class="prod-list__slide prod-card swiper-slide">
                 <div class="prod-card__bg">
@@ -1310,6 +1356,18 @@
                 <span class="prod-card__price">
                   от 2 500 до 4 000 ₽ / час
                 </span>
+                <a href="#" class="prod-card__box">
+                  <span class="prod-card__box-link">
+                    <img
+                      class="prod-card__box-icon"
+                      src="./img/icons/play.svg"
+                      alt="play icon" />
+                  </span>
+                  <span class="prod-card__box-btn button-filled">
+                    <span>Подробнее</span>
+                    <img src="./img/icons/arrow-right.svg" alt="" />
+                  </span>
+                </a>
               </div>
               <div class="prod-list__slide prod-card swiper-slide">
                 <div class="prod-card__bg">
@@ -1397,6 +1455,18 @@
                 <span class="prod-card__price">
                   от 2 500 до 4 000 ₽ / час
                 </span>
+                <a href="#" class="prod-card__box">
+                  <span class="prod-card__box-link">
+                    <img
+                      class="prod-card__box-icon"
+                      src="./img/icons/play.svg"
+                      alt="play icon" />
+                  </span>
+                  <span class="prod-card__box-btn button-filled">
+                    <span>Подробнее</span>
+                    <img src="./img/icons/arrow-right.svg" alt="" />
+                  </span>
+                </a>
               </div>
             </div>
             <span
@@ -1617,6 +1687,9 @@
           } else {
             $(this).datepicker("show");
           }
+        });
+        $(".date-picker").on("click", function () {
+          $(".ui-datepicker").outerWidth($(this).outerWidth());
         });
       });
     </script>

@@ -46,7 +46,7 @@ document.addEventListener("click", (e) => {
   if (e.target.closest(".modal-filter__close-content-btn")) {
     modalFilter
       .querySelector(".modal-filter__categories-sections")
-      .classList.add("closed");
+      .classList.remove("closed");
 
     modalFilter.querySelectorAll(".modal-filter__tab").forEach((el) => {
       el.classList.remove("modal-filter__tab_current");
@@ -58,7 +58,7 @@ document.addEventListener("click", (e) => {
   ) {
     modalFilter
       .querySelector(".modal-filter__categories-sections")
-      .classList.add("closed");
+      .classList.remove("closed");
 
     modalFilter.querySelectorAll(".modal-filter__tab").forEach((el) => {
       el.classList.remove("modal-filter__tab_current");
